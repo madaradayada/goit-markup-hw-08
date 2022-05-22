@@ -1,0 +1,17 @@
+.section {
+  padding: 60px 0;
+  @media screen and (min-width: 1200px) {
+    padding: 94px 0;
+  }
+}
+
+.section__title {
+  @include fonts(700, 28px, 1.18, 0.03em);
+  text-align: center;
+  color: var(--title-text-color);
+  margin-bottom: 30px;
+  @media screen and (min: width 1200px) {
+    @include fonts(null, 36px, 1.17, null);
+    margin-bottom: 50px;
+  }
+}

@@ -1,0 +1,32 @@
+.section.nopadding-top {
+  padding-top: 0;
+  @media screen and (max-width: 1199px) {
+    display: none;
+  }
+}
+
+.work {
+  display: flex;
+}
+
+.work__item:not(:first-child) {
+  margin-left: 30px;
+}
+
+.work__thumb {
+  position: relative;
+}
+
+.work__title {
+  position: absolute;
+  bottom: 0;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  height: 70px;
+  width: 370px;
+  @include fonts(700, 14px, 1.14, 0.03em);
+  text-transform: uppercase;
+  color: var(--background-color);
+  background-color: rgba(47, 48, 58, 0.8);
+}

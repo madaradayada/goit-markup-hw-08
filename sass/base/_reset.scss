@@ -1,0 +1,40 @@
+body {
+  color: var(--primary-text-color);
+  background-color: var(--background-color);
+  font-family: 'Roboto', sans-serif;
+  @include fonts(null, 14px, null, 0.03em);
+}
+
+h1,
+h2,
+h3,
+p,
+ul,
+input {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+button {
+  cursor: pointer;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  transition: color var(--transform-type);
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+    fill: currentColor;
+  }
+}

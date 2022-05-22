@@ -1,0 +1,32 @@
+.clients {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.clients__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--icons-base-color);
+  border-radius: 4px;
+  color: var(--icons-base-color);
+  width: 210px;
+  height: 92px;
+  @media screen and (min-width: 768px) {
+    width: 226px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 170px;
+  }
+  fill: currentColor;
+  transition: color var(--transform-type);
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+    border-color: currentColor;
+    fill: currentColor;
+  }
+}

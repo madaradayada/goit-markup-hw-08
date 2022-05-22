@@ -1,13 +1,27 @@
 @import './utils/vars';
 @import './utils/visually-hidden';
-@import './components/common';
-@import './components/page-header';
-@import './components/hero';
-@import './components/hero-modal';
-@import './components/section-features';
-@import './components/section-activity';
-@import './components/section-team';
-@import './components/section-clients';
+@import './utils/mixins';
+
+@import './base/reset';
+@import './base/container';
+
+@import './components/section';
+@import './components/button';
+@import './components/header';
+@import './components/logo';
+@import './components/site-nav';
+@import './components/contacts';
+@import './components/social-icons';
+@import './components/modal.scss';
 @import './components/footer';
-@import './components/portfolio-filter';
-@import './components/portfolio-cards';
+@import './components/footer-social';
+@import './components/footer-mailing';
+
+@import './sections/hero';
+@import './sections/features';
+@import './sections/work';
+@import './sections/team';
+@import './sections/clients';
+
+@import './portfolio/filter-menu';
+@import './portfolio/cards';
