@@ -1,40 +1,27 @@
-body {
-  color: var(--primary-text-color);
-  background-color: var(--background-color);
-  font-family: 'Roboto', sans-serif;
-  @include fonts(null, 14px, null, 0.03em);
-}
-
+p,
 h1,
 h2,
 h3,
-p,
-ul,
-input {
-  margin: 0;
-  padding: 0;
+h4,
+h5,
+h6 {
+    margin: 0;
 }
 
 img {
-  display: block;
-  max-width: 100%;
-  height: auto;
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
 }
 
-button {
-  cursor: pointer;
-}
-
-ul {
-  list-style: none;
-}
-
+ul,
+li,
+link,
 a {
-  text-decoration: none;
-  transition: color var(--transform-type);
-  &:hover,
-  &:focus {
-    color: var(--accent-color);
-    fill: currentColor;
-  }
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
 }

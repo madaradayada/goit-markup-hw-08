@@ -1,0 +1,115 @@
+.team {
+    // display: flex;
+    // flex-wrap: wrap;
+    // margin-left: -30px;
+
+    @media screen and (min-width: $mobile) {
+        display: block;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    @media screen and (min-width: $tablet) {
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: -30px;
+        margin-bottom: -30px;
+    }
+
+    @media screen and (min-width: $desktop) {
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: -30px;
+    }
+
+}
+
+.team__item {
+    // flex-basis: calc(100% / 4-30px);
+    // margin-left: 30px;
+    margin-bottom: 30px;
+    background-color: #ffffff;
+    border-bottom: 1px solid #eeeeee;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+        0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+
+    @media screen and (min-width: $mobile) {
+        margin-right: auto;
+        margin-left: auto;
+        margin-bottom: 30px;
+    }
+
+    @media screen and (min-width: $tablet) {
+        flex-basis: calc(100% / 2 - 30px);
+        margin-left: 30px;
+        margin-bottom: 30px;
+    }
+
+    @media screen and (min-width: $desktop) {
+        flex-basis: calc(100% / 4 - 30px);
+        margin-left: 30px;
+        margin-bottom: 0;
+    }
+
+}
+
+.team__meta {
+    padding: 30px 0;
+}
+
+.team__title {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    text-align: center;
+}
+
+.team__position {
+    font-size: 16px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    color: var(--secondary-text-color);
+    margin-top: 10px;
+    text-align: center;
+}
+
+.soc-list {
+    display: flex;
+    justify-content: center;
+    margin-top: 16px;
+}
+
+.soc-list__item {
+    margin-left: 10px;
+
+    &:first-child {
+        margin-left: 0px;
+    }
+}
+
+.soc-list__link {
+    display: flex;
+    height: 44px;
+    width: 44px;
+    padding: 0;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    fill: #afb1b8;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+        background-color: var(--accent-color);
+        fill: var(--primary-button-text-color);
+    }
+}
+
+.soc-list__icon {
+    padding: 0;
+    margin: 0;
+    align-items: center;
+}

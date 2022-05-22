@@ -1,0 +1,53 @@
+.footer-address {
+    margin-top: 20px;
+    text-align: center;
+
+    @media screen and (min-width: $mobile) {
+        text-align: center;
+    }
+
+    @media screen and (min-width: $tablet) {
+        text-align: center;
+    }
+
+    @media screen and (min-width: $desktop) {
+        text-align: left;
+    }
+}
+
+.address__link {
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover {
+        color: var(--accent-color);
+    }
+
+    &:focus {
+        color: var(--accent-color);
+    }
+}
+
+.address__item {
+    margin-bottom: 9px;
+}
+
+.address__item-link {
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+    text-decoration: none;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+        color: var(--accent-color);
+    }
+}
