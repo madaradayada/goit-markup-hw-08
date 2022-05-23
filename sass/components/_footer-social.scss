@@ -1,9 +1,9 @@
 .connection {
     // margin-left: 70px;
-    margin-top: 60px;
+    margin: 60px 0;
 
     @media screen and (min-width: $mobile) {
-        margin-top: 60px;
+        margin: 60px 0;
     }
 
     @media screen and (min-width: $tablet) {

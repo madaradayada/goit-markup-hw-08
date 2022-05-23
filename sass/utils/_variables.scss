@@ -96,11 +96,11 @@ body.modal-open {
     text-align: center;
     // margin-bottom: 50px;
     padding-top: 60px;
-    margin-bottom: 30px;
+    padding-bottom: 30px;
 
     @media screen and (min-width: $mobile) {
         padding-top: 0;
-        margin-bottom: 30px;
+        padding-bottom: 30px;
     }
 
     @media screen and (min-width: $tablet) {
