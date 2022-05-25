@@ -22,14 +22,11 @@ body.modal-open {
 
 
 .container {
-    // width: 1200px;
     padding-left: 15px;
     padding-right: 15px;
     margin-left: auto;
     margin-right: auto;
 
-
-    /* outline: 2px solid teal; */
 
     @media screen and (min-width: $mobile) {
         width: $mobile;
@@ -46,15 +43,8 @@ body.modal-open {
 }
 
 .section {
-    // padding-top: 94px;
-    // padding-bottom: 94px;
     padding-top: 60px;
     padding-bottom: 60px;
-
-    @media screen and (min-width: $mobile) {
-        padding-top: 60px;
-        padding-bottom: 60px;
-    }
 
     @media screen and (min-width: $tablet) {
         padding-top: 60px;
@@ -72,16 +62,8 @@ body.modal-open {
     display: none;
     padding-top: 0;
 
-    @media screen and (min-width: $mobile) {
-        display: none;
-    }
-
-    @media screen and (min-width: $tablet) {
-        display: none;
-    }
-
     @media screen and (min-width: $desktop) {
-        display: contents;
+        display: block;
         padding-top: 0;
     }
 }
@@ -94,14 +76,9 @@ body.modal-open {
     font-weight: 700;
     letter-spacing: 0.03em;
     text-align: center;
-    // margin-bottom: 50px;
-    padding-top: 60px;
-    padding-bottom: 30px;
+    padding-top: 0;
+    margin-bottom: 30px;
 
-    @media screen and (min-width: $mobile) {
-        padding-top: 0;
-        padding-bottom: 30px;
-    }
 
     @media screen and (min-width: $tablet) {
         font-size: 28px;

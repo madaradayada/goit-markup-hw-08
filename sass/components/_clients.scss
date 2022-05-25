@@ -1,5 +1,4 @@
 .clients__title {
-    margin-bottom: 50px;
     font-weight: 700;
     font-size: 36px;
     line-height: 42px;
@@ -11,14 +10,9 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    // margin-left: -30px;
-    // margin-bottom: -30px;
 
-    @media screen and (min-width: $mobile) {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
+    margin-top: -30px;
+    margin-left: -30px;
 
     @media screen and (min-width: $tablet) {
         display: flex;
@@ -35,48 +29,30 @@
 }
 
 .clients__item {
-    // margin-left: 30px;
-
-    // &:first-child {
-    //     margin-left: 0;
-    // }
-
-    flex-basis: calc(100% / 2 - 20px);
-    margin-left: 20px;
-    margin-bottom: 20px;
+    flex-basis: calc(100% / 2 - 30px);
+    margin-left: 30px;
+    margin-top: 30px;
 
     &:last-child {
         margin-bottom: 0;
     }
 
-    @media screen and (min-width: $mobile) {
-        flex-basis: calc(100% / 2 - 30px);
-        margin-left: 30px;
-        margin-bottom: 30px;
-
-    }
-
     @media screen and (min-width: $tablet) {
         flex-basis: calc(100% / 3 - 30px);
         margin-left: 30px;
-        margin-bottom: 30px;
-
-
+        margin-top: 30px;
     }
 
     @media screen and (min-width: $desktop) {
         margin-left: 30px;
         margin-bottom: 0;
-
-        &:first-child {
-            margin-left: 0;
-        }
+        margin-top: 30px;
     }
 }
 
 .clients__link {
     display: flex;
-    width: 170px;
+    // width: 170px;
     height: 92px;
     border: 1px solid #afb1b8;
     box-sizing: border-box;

@@ -2,10 +2,6 @@
     margin-top: 20px;
     text-align: center;
 
-    @media screen and (min-width: $mobile) {
-        text-align: center;
-    }
-
     @media screen and (min-width: $tablet) {
         text-align: center;
     }
